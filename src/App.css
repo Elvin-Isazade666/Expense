@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 380px;
+}
+.container h3{
+  margin-top: 20px;
+}
+.money-container{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px;
+}
+.money-container::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 14%;
+    background-color: gray;
+    left: 50%;
+}
+.money-container .money-plus{
+  color: green;
+  font-size: 18px;
+}
+.money-container .money-minus{
+  color: red;
+  font-size: 18px;
+
+}
+.transaction-container{
+  margin-top: 18px;
+}
+.transaction-container h2{
+  border-bottom: 1px solid gray;
+}
+.transaction-container .list{
+    list-style: none;
+    margin-top: 14px;
+    
+}
+.transaction-container .list .minus{
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 4px solid red;
+    position: relative;
+  }
+  .transaction-container .list .minus .delete-list{
+    transition: all 0.4s;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 6px 11px;
+    font-size: 17px;
+    position: absolute;
+    left: -34px;
+    opacity: 0;
+
+}
+.transaction-container .list .minus:hover .delete-list{
+  opacity: 1;
+}
+
+
+.transaction-container .list .plus{
+  background-color: whitesmoke;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 4px solid green;
+  position: relative;
+}
+.transaction-container .list .plus .delete-list{
+  transition: all 0.4s;
+  cursor: pointer;
+  background-color: red;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 6px 11px;
+  font-size: 17px;
+  position: absolute;
+  left: -34px;
+  opacity: 0;
+
+}
+.transaction-container .list .plus:hover .delete-list{
+opacity: 1;
+}
+.add-container h3{
+    border-bottom: 1px solid gray;  
+}
+.add-container form{
+  margin-top: 20px;
+}
+.add-container form label{
+    font-weight: 800;
+    font-size: 19px;
+    
+}
+.add-container .form-control{
+  margin-top: 10px;
+}
+.add-container form input{
+    padding: 5px;
+    width: 100%;
+}
+.add-container form button{
+    width: 100%;
+    padding: 10px;
+    background-color: mediumpurple;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 11px;
+}
